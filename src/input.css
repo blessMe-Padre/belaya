@@ -1,0 +1,101 @@
+/* Импорт шрифтов */
+
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/button.css';
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/swiper.css';
+@import './block/sliders.css';
+@import './block/scrool-top.css';
+@import './block/hero.css';
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+@font-face {
+    font-family: 'archangelsk';
+    src: url('../src/fonts/archangelsk.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #303030;
+        background: #E5E5E5;
+        font-weight: 400;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+.header-call-button {
+    border-radius: 30px;
+    padding: 14px 55px;
+    background: #e47611;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header-call-button:hover {}
+
+.popup-link {}
+
+.nav-link {
+    @apply text-lg text-white hover:text-blue transition-colors;
+}
+
+/* Прочие классы */
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.important {
+    background-image: url('../src/img/pattern-3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+@media (max-width: 767px) {
+    .important {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero-bg img {
+        display: none;
+    }
+}
