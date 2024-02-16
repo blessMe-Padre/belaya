@@ -10,6 +10,7 @@
 @import './block/scrool-top.css';
 @import './block/hero.css';
 @import './block/about.css';
+@import './block/clients.css';
 
 /* Импорт TailWind */
 @tailwind base;

@@ -992,6 +992,30 @@ button.swiper-pagination-bullet{
   }
 }
 
+.clients {
+  padding: 100px 0;
+  background-image: url('../src/img/bg/clients-bg.webp');
+  background-repeat: no-repeat;
+}
+
+.client__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.client__title {
+  color: #ffffff;
+}
+
+.client__text {
+  font-weight: 100;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #e47611;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
