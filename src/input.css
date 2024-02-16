@@ -9,6 +9,7 @@
 @import './block/sliders.css';
 @import './block/scrool-top.css';
 @import './block/hero.css';
+@import './block/about.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -40,7 +41,7 @@
 
 @layer components {
     .container {
-        @apply max-w-[1440px]
+        @apply max-w-[1720px]
     }
 }
 
