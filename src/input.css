@@ -12,6 +12,7 @@
 @import './block/about.css';
 @import './block/clients.css';
 @import './block/animations.css';
+@import './block/future.css';
 
 /* Импорт TailWind */
 @tailwind base;

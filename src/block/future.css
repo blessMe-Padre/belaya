@@ -1,0 +1,78 @@
+.future {
+    padding: 100px 0 150px;
+    background-image: url('../src/img/bg/future-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1100px;
+    margin-top: -85px;
+
+    position: relative;
+}
+
+.future__title {
+    font-weight: 100;
+    font-size: clamp(2.25rem, 0.621rem + 8.143vw, 9.375rem);
+    line-height: 1.29412;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.future__icon {
+    width: 60px;
+    height: 60px;
+    /* border: 4px solid #ffffff; */
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.future__icon-modal {
+    padding: 40px;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
+    border-radius: 20px;
+    fill: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(100px);
+    width: 405px;
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+}
+
+.future__icon-modal-img {
+    margin-bottom: 20px;
+}
+
+.future__icon-modal-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #e47611;
+    margin-bottom: 30px;
+}
+
+.future__icon-modal-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.future__icon:hover .future__icon-modal {
+    transform: rotateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.future__icon--2 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}

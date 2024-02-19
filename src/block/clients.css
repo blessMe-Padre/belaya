@@ -1,7 +1,9 @@
 .clients {
-    padding: 100px 0;
-    background-image: url('../src/img/bg/clients-bg.webp');
+    padding: 260px 0;
+    background-image: url('../src/img/bg/clients.webp');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .client__header {
