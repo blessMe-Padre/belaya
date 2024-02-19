@@ -910,6 +910,11 @@ button.swiper-pagination-bullet{
   max-width: 408px;
 }
 
+.about__header {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .about__item--2 {
   grid-column: 3/4;
   grid-row: 2/3;
@@ -945,7 +950,7 @@ button.swiper-pagination-bullet{
 
 .about__title {
   font-weight: 100;
-  font-size: clamp(36px, 5vw, 100px);
+  font-size: clamp(1.875rem, 1rem + 4.375vw, 6.25rem);
   text-transform: uppercase;
   color: #202020;
 }
@@ -1000,9 +1005,10 @@ button.swiper-pagination-bullet{
 
 .client__header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .client__title {
@@ -1011,9 +1017,52 @@ button.swiper-pagination-bullet{
 
 .client__text {
   font-weight: 100;
-  font-size: 100px;
+  font-size: clamp(1.875rem, 1rem + 4.375vw, 6.25rem);
   text-transform: uppercase;
   color: #e47611;
+}
+
+.clients__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  will-change: transform;
+}
+
+.clients__item {
+  flex: 0 0 auto;
+  width: 262px;
+  border-radius: 20px;
+  background-color: #202020;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 20px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
+          clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
+}
+
+.clients__wrapper {
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.animation-scroll-to-left {
+  animation: scroll 30s linear 0s infinite none running;
+}
+
+.animation-scroll-to-right {
+  animation: scroll 30s linear 0s infinite none reverse running;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-2050px, 0, 0);
+  }
 }
 
 /* Импорт TailWind */
@@ -1647,6 +1696,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1727,6 +1780,10 @@ body {
 .bg-light-black {
   --tw-bg-opacity: 1;
   background-color: rgb(49 49 49 / var(--tw-bg-opacity));
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-4 {

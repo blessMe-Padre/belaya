@@ -1,0 +1,17 @@
+.animation-scroll-to-left {
+    animation: scroll 30s linear 0s infinite none running;
+}
+
+.animation-scroll-to-right {
+    animation: scroll 30s linear 0s infinite none reverse running;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-2050px, 0, 0);
+    }
+}
