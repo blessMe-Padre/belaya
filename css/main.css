@@ -1196,6 +1196,19 @@ button.swiper-pagination-bullet{
 
 .services__item {
   padding: 40px;
+  color: #303030;
+}
+
+.services__description-item p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.services__description-title {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .services__buttons {
@@ -1240,8 +1253,25 @@ button.swiper-pagination-bullet{
           clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%);
 }
 
+.services__button--left:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 50%;
+  background-color: #E5E5E5;
+  z-index: 1;
+  -webkit-clip-path: polygon(101% 0%, 101% 100%, 0% 80%, 0% 100%, 0% 0%);
+          clip-path: polygon(101% 0%, 101% 100%, 0% 80%, 0% 100%, 0% 0%);
+}
+
+.services__button svg {
+  transition: all 0.3s ease;
+}
+
 .services__button svg path {
-  fill: #ffffff;
+  fill: #E47611;
 }
 
 .services__button.is-active {
@@ -1254,6 +1284,21 @@ button.swiper-pagination-bullet{
 
 .services__description-item.is-active {
   display: block;
+}
+
+.services__icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.services__button.is-active p {
+  color: #ffffff;
+}
+
+.services__button.is-active svg path {
+  fill: #ffffff;
 }
 
 /* Импорт TailWind */
